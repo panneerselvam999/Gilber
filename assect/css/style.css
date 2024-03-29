@@ -241,11 +241,79 @@ header {
 /* **************************************************************************************** */
 
 /* project page - start */
-
-.banner{
+/* banner - start */
+.banner {
     width: 100%;
-    height: 700px;
+    height: 720px;
     border: 2px dashed black;
-    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+/* banner - end */
+
+/* project-info - start */
+.project-info {
+    border: 2px dashed;
+    width: 100%;
+    height: auto;
+    padding: 100px 200px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info-main {
+    text-align: center;
+    font-size: 22px;
+    border: 2px dashed red;
+    width: 680px;
+}
+
+/* project-info - end */
+
+
+/* project video - start */
+.project-video {
+    width: 100%;
+    height: 630px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-video-play {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-video-play i {
+    font-size: 30px;
+}
+
+/* project video - end */
+
+/* result - start */
+.result-img {
+    height: 566px;
+    width: 1050px;
+}
+.result-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* result - end */
+
+
 /* project page - end */
