@@ -49,9 +49,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 50px;
+    /* padding: 20px ; */
     position: relative;
-
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .logo img {
@@ -308,7 +309,8 @@ header {
     height: 566px;
     width: 1050px;
 }
-.result-img img{
+
+.result-img img {
     width: 100%;
     height: 100%;
 }
@@ -317,3 +319,57 @@ header {
 
 
 /* project page - end */
+
+
+
+
+
+/* ********************************************************************************** */
+
+/* blog page - start */
+/* banner - start */
+.blog-banner {
+    width: 100%;
+    height: 720px;
+    border: 2px dashed black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* banner - end */
+
+/* beast creature - start */
+.creature {
+    width: 100%;
+    height: 550px;
+    border: 2px dashed red;
+}
+
+/* beast creature - end */
+
+/* blog-photo  - start */
+.blog-photo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-photo img {
+    height: 500px;
+}
+
+/* blog-photo  - end */
+
+/* methods for everyone - start */
+.mfe {
+    width: 100%;
+    height: 550px;
+    border: 2px dashed;
+    background-color: blueviolet;
+}
+
+/* methods for everyone - end */
+
+/* blog page - end */
