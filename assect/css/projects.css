@@ -1,0 +1,346 @@
+/* common code - start */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    position: relative;
+    width: 100%;
+    scrollbar-width: thin;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* scrollbar - start */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2f2525;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+/* scrollbar - end */
+
+/* nav bar - start */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.base {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid;
+}
+
+.logo img {
+    height: 23px;
+}
+
+.head-nav {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.head-nav a {
+    font-size: 15px;
+    color: white;
+}
+
+.head-nav a:hover {
+    color: red;
+}
+
+.base .num {
+    font-size: 15px;
+}
+
+.social {
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    height: 100vh;
+}
+
+.social .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .icon::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.icon::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+} */
+
+.social .icon i {
+    font-size: 25px;
+    color: white;
+}
+
+.social .icon i:hover {
+    color: red;
+}
+
+.copyRight-main {
+    position: relative;
+}
+
+.copyRight {
+    position: absolute;
+    top: 580px;
+    font-size: 15px;
+}
+
+/* nav bar - media - start */
+@media only screen and (max-width: 1500px) {
+    .base {
+        display: none;
+    }
+}
+
+/* nav bar - media - end */
+
+/* nav bar - end */
+/* common code - end */
+
+
+
+/* project page - start */
+/* banner - start */
+.project-banner {
+    margin-bottom: 120px;
+    width: 100%;
+    /* height: 780px; */
+    height: 850px;
+    background-position: center 5%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    padding-bottom: 100px;
+}
+
+.project-banner-main {
+    width: 1050px;
+    margin: 0px auto;
+    padding: 0px 30px;
+}
+
+.project-banner-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-head {
+    font-size: 70px;
+    text-align: center;
+}
+
+.banner-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 220px;
+}
+
+.banner-info>div {
+    width: 217px;
+}
+
+.banner-info h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* banner - end */
+
+/* project-info - start */
+.project-info {
+    width: 100%;
+    height: auto;
+    padding: 100px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info-main {
+    width: 680px;
+}
+
+.project-info-main p {
+    line-height: 35px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.project-info-main a {
+    color: red;
+}
+
+/* project-info - end */
+
+/* Breaf and idea - start*/
+
+.breaf-main {
+    width: 1080px;
+    margin: 0px auto;
+}
+
+.breaf-img {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.breaf-img img {
+    height: 480px;
+    margin: 0px auto;
+}
+
+.breaf-con {
+    width: 700px;
+    text-align: center;
+    line-height: 30px;
+    margin: 150px auto;
+}
+
+.breaf-head h3 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.breaf-con p:last-child {
+    margin-top: 10px;
+}
+
+/* Breaf and idea - end*/
+
+/* project video - start */
+.project-video {
+    width: 100%;
+    height: 630px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-video-play {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-video-play i {
+    font-size: 30px;
+}
+
+/* project video - end */
+
+/* result - start */
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.result-head {
+    margin: 100px 0px 60px 0px;
+}
+
+.result-head h3 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.result-info {
+    width: 719px;
+    margin: 0px auto 80px auto;
+    line-height: 24px;
+}
+
+.result-img {
+    height: 566px;
+    width: 1050px;
+}
+
+.result-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.rh-inner {
+    margin: 100px auto;
+    height: 120px;
+    width: 120px;
+    /* border: 2px solid; */
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.rh-inner i {
+    font-size: 50px;
+}
+
+/* result - end */
+
+/* project page - end */
