@@ -301,6 +301,8 @@ header {
     }
 }
 
+
+
 @media only screen and (max-width: 600px) {
     #home {
         background-image: url(../img/home-2.jpg);
@@ -308,9 +310,7 @@ header {
         align-items: center;
         background-repeat: no-repeat;
     }
-}
 
-@media only screen and (max-width: 600px) {
     .home {
         height: 100vh;
         padding: 120px 0px;
@@ -334,7 +334,6 @@ header {
 .about {
     width: 100%;
     height: 728px;
-    border: 2px dashed green;
     padding: 120px;
 }
 
@@ -471,7 +470,7 @@ header {
     }
 
     .about-main {
-        width: min-content;
+        width: 377px;
     }
 
     .about-exp-topic {
@@ -504,12 +503,18 @@ header {
 /* testimonials - start */
 .testimonials {
     width: 100%;
-    height: 710px;
-    padding: 100px;
-    border: 2px dashed white;
+    height: min-content;
+    /* height: 710px; */
+    padding: 120px;
+    border: 1px dashed white;
+    background-image: url(../img/testimonials.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tm-main {
+    height: min-content;
     height: 100%;
     width: 100%;
     border: 1px dashed red;
@@ -523,21 +528,110 @@ header {
 }
 
 .tm-con {
+    width: 540px;
+    height: 560px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 40px;
 }
 
+.tmc-img {
+    margin-bottom: 210px;
+}
+
 .tmc-img img {
-    width: 75px;
-    height: 75px;
+    border: 1px dashed;
+    width: 100px;
+    height: 100px;
 }
 
 .tmc-head h3 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 400;
-    line-height: 65px;
+    line-height: 67px;
+}
+
+.tm-carousel {
+    height: 557px !important;
+    /* width: 100%; */
+    border: 1px dashed yellow;
+}
+
+.tm-carousel-inner {
+    border: 1px dashed green;
+    background-color: blue;
+    height: 364px;
+    width: 360px;
+    padding: 0px 15px;
+    margin-left: 180px;
+    margin-top: 197px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tm-main {
+        display: block;
+    }
+
+    .tm-main>div {
+        width: 100%;
+    }
+
+    .tm-carousel {
+        height: 500px;
+        width: 460px;
+        /* background: white; */
+    }
+
+    .tm-carousel-inner {
+        background-color: blue;
+        height: 500px;
+        width: 460px;
+        padding: 0px 15px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .testimonials {
+        padding: 120px 0px;
+
+    }
+
+    .tm-main {
+        display: block;
+        padding: 0px 30px;
+    }
+
+    .tm-con {
+        padding: 0px;
+    }
+
+    .tm-main>div {
+        width: 100%;
+    }
+
+    .tm-carousel {
+        margin-top: 70px;
+        height: fit-content !important;
+        width: 460px;
+        /* background: white; */
+
+    }
+
+    .tm-carousel-inner {
+        background-color: blue;
+        /* height: 500px;
+        width: 460px; */
+        width: 100%;
+        height: fit-content;
+        padding: 0px 15px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
 }
 
 /* testimonials - end */
@@ -545,27 +639,26 @@ header {
 /* partners - start */
 .partners {
     width: 100%;
-    height: 650px;
-    padding: 110px;
+    /* height: 650px; */
+    padding: 120px;
 }
 
 .partners-main {
     border: 2px dashed black;
     height: 100%;
     width: 100%;
-}
-
-.partners-inner {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 0px 90px;
-    /* align-items: center; */
+    padding: 0px 30px;
 }
 
+
+
 .partners-heding h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 400;
+    margin-bottom: 100px;
 }
 
 .partners-logo {
@@ -578,11 +671,35 @@ header {
 .p-logo {
     border: 1px dashed white;
     height: 68px;
-    width: 200px;
+    /* width: 256px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 10px; */
+}
+
+.partners-logo .p-logo:nth-child(-n+4) {
+    margin-bottom: 170px;
+}
+
+@media only screen and (max-width: 600px) {
+    .partners {
+        padding: 120px 0px;
+    }
+
+    .partners-main {
+        padding: 0px 30px;
+    }
+
+    .partners-logo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .partners-logo .p-logo:nth-child(-n+4) {
+        margin-bottom: 0px;
+    }
 }
 
 /* partners - end */
@@ -798,7 +915,7 @@ header {
 
 @media only screen and (max-width: 600px) {
     .contact {
-        padding: 0px;
+        padding: 120px 0px;
         padding-bottom: 200px;
         height: auto;
     }
