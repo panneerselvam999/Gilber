@@ -247,6 +247,7 @@ header {
     height: 641px;
     padding: 0pc 30px;
     background: transparent;
+    border: 1px dashed;
 }
 
 .home-content-inner {
@@ -283,7 +284,6 @@ header {
 .hc-name h1 span {
     color: red;
 }
-
 @media only screen and (max-width: 1200px) {
     .home-content-main {
         width: 953px;
@@ -321,7 +321,6 @@ header {
         padding: 0px 15px;
     }
 }
-
 /* home - end */
 
 /* about - start */
@@ -395,6 +394,7 @@ header {
     height: 488px;
     width: 540px;
     padding: 0px 15px;
+    border: 1px dashed;
 }
 
 .aet-head h3 {
@@ -455,6 +455,7 @@ header {
 
     .about-exp-topic {
         width: auto;
+        width: 610px;
     }
 }
 
@@ -678,18 +679,15 @@ header {
 /* partners - start */
 .partners {
     width: 100%;
-    /* height: 650px; */
     padding: 120px;
 }
 
 .partners-main {
-    border: 2px dashed black;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 0px 30px;
 }
 
 .partners-heding h3 {
@@ -706,17 +704,14 @@ header {
 }
 
 .p-logo {
-    border: 1px dashed white;
     height: 68px;
-    /* width: 256px; */
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
-.partners-logo .p-logo:nth-child(-n + 4) {
-    margin-bottom: 170px;
-}
 
 @media only screen and (max-width: 600px) {
     .partners {
@@ -776,6 +771,24 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-date {
+    font-size: 15px;
+}
+
+.blog-head {
+    font-size: 32px;
+}
+
+.blog-con p {
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 120px;
 }
 
 @media only screen and (max-width: 1200px) {
