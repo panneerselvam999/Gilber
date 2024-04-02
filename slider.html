@@ -8,13 +8,90 @@
     <link rel="stylesheet" href="slider.css">
 
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel {
+            height: 150px;
+            width: 500px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .z {
+            background-color: pink;
+        }
+
+        .x {
+            background-color: yellow;
+        }
+
+        .carousel>.slide:not(:first-child) {
+            /* Styles for all slides except the first */
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="carousel">
+        <div class="slide z">1 <!-- Slide 1 content here --> </div>
+        <div class="slide x">2 <!-- Slide 2 content here --> </div>
+        <div class="slide z">3 <!-- Slide 3 content here --> </div>
+        <div class="slide x">4 <!-- Slide 4 content here --> </div>
+        <div class="slide z">5 <!-- Slide 5 content here --> </div>
+    </div>
+
+    <button class="prev-btn">Prev</button>
+    <button class="next-btn">Next</button>
 
 
-    <div class="one">One</div>
-    <div class="two">Two</div>
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Example: Adding event listeners to next and previous buttons
+        document.querySelector('.next-btn').addEventListener('click', nextSlide);
+        document.querySelector('.prev-btn').addEventListener('click', prevSlide);
+
+        // Optionally, you can add autoplay functionality
+        // setInterval(nextSlide, 3000); // Advance to next slide every 3 seconds
+
+    </script>
+
 </body>
 
 </html>
