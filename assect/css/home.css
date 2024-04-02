@@ -167,8 +167,7 @@ header {
 @media only screen and (max-width: 1500px) {
 
     .head-nav,
-    .num,
-    .social {
+    .num {
         display: none;
     }
 
@@ -976,6 +975,11 @@ header {
 
 .blog-card:hover>* {
     opacity: 1;
+}
+
+.blog-card {
+    background-image: none;
+    background-color: #fff;
 }
 
 .blog-date {

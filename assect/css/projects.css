@@ -167,8 +167,7 @@ header {
 @media only screen and (max-width: 1500px) {
 
     .head-nav,
-    .num,
-    .social {
+    .num{
         display: none;
     }
 
