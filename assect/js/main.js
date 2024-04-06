@@ -1,17 +1,22 @@
+
+// nav bar start
 $(document).ready(function () {
     $(".res-nav-icon").click(function () {
-        console.log("Clicked!");
-
-        $(".res-nav").css("display", "block");
+        console.log("Clicked! ture");
+        $(".base").hide();
+        $(".res-nav").show();
+        // $(".res-nav").toggle("slide", { direction: "left" })
     });
 
     $(".cancel").click(function () {
-        console.log("Clicked!");
+        console.log("Clicked! false");
+        $(".base").show();
+        $(".res-nav").hide();
 
-        $(".res-nav").css("display", "none");
     });
 
 });
+// nav bar end
 
 
 
@@ -48,33 +53,29 @@ document.querySelector('.ts-prev-btn').addEventListener('click', prevSlide);
 
 
 
+
+
 // project carousel - start
-const pro_carousel = document.querySelector('.project-main-in');
-const pro_slides = document.querySelectorAll('.project-card');
-let pro_currentIndex = 0;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        if (i === index) {
-            slide.style.display = 'block';
-        } else {
-            slide.style.display = 'none';
-        }
-    });
-}
+// swiper caorusel start
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 10,
+    slidesPerView: 1,
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true // Enable cross fading for complete hiding
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+});
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-}
-
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-}
-
-// Example: Adding event listeners to next and previous buttons
-document.querySelector('.pro-btn-l').addEventListener('click', nextSlide);
-document.querySelector('.pro-btn-r').addEventListener('click', prevSlide);
 
 // project carousel - end

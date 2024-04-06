@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gilber - Homepage</title>
+    <title>Swiper</title>
     <!-- <link rel="stylesheet" href="assect/css/style.css" /> -->
-    <link rel="stylesheet" href="assect/css/home.css" />
+    <link rel="stylesheet" href="assect/css/home2.css" />
 
     <!-- fafa cdn - start -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- fafa cdn - end -->
+
+    <!-- swiper js cdn - start -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- swiper js cdn - end -->
 </head>
 
 <body>
@@ -24,7 +28,7 @@
                 <nav class="head-nav">
                     <a href="#home">HOME</a>
                     <a href="#about">ABOUT</a>
-                    <a href="projects.html">PROJECTS</a>
+                    <a href="#projects">PROJECTS</a>
                     <a href="#education">EDUCATION</a>
                     <a href="#testimonials">TESTIMONIALS</a>
                     <a href="#partners">PARTNERS</a>
@@ -89,7 +93,8 @@
             </div>
         </section>
 
-        <section class="home scroll-effect" id="home" style="background-image: url(assect/img/home.jpg)">
+        <!-- <section class="home scroll-effect" id="home" style="background-image: url(assect/img/home.jpg)"> -->
+        <section class="home scroll-effect" id="home">
             <div class="home-content-main">
                 <div class="home-content-inner">
                     <!-- <div class="h-content"> -->
@@ -175,106 +180,93 @@
             </div>
         </section>
 
-        <section class="projects scroll-effect" id="projects">
+
+        <section class="projects" id="projects">
             <div class="projects-main">
                 <div class="project-main-in">
-                    <div class="project1 project-card">
-                        <div class="project-show">
-                            <div class="project-head">
-                                <h1>Watch<span>.</span></h1>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="project1 project-card">
+                                    <div class="project-show">
+                                        <div class="project-head">
+                                            <h1>Watch<span>.</span></h1>
+                                        </div>
+                                        <div class="project-des">
+                                            <p>
+                                                Bring saw gathering kind evening them air him void morning
+                                                dominion spirit multiply seas shall day were likeness. Upon tree
+                                                a gathering.
+                                            </p>
+                                        </div>
+                                        <div class="project-link">
+                                            <a href="projects.html">SEE PROJECT</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="project-des">
-                                <p>
-                                    Bring saw gathering kind evening them air him void morning
-                                    dominion spirit multiply seas shall day were likeness. Upon tree
-                                    a gathering.
-                                </p>
-                                <!-- <a href="projects.html">check</a> -->
+
+                            <div class="swiper-slide">
+                                <div class="project2 project-card">
+                                    <div class="project-show">
+                                        <div class="project-head">
+                                            <h1>The Bottle<span>.</span></h1>
+                                        </div>
+                                        <div class="project-des">
+                                            <p>
+                                                Working with client and community, we deliver masterplans that
+                                                create vibrant new place and spaces, attract people, and
+                                                encourage investment through.
+                                            </p>
+                                        </div>
+                                        <div class="project-link">
+                                            <a href="projects.html">SEE PROJECT</a>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
-                            <div class="project-link">
-                                <a href="projects.html">SEE PROJECT</a>
-                            </div>
-                            <div class="project-nav">
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn1" checked>
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn3">
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn2">
+
+                            <div class="swiper-slide">
+                                <div class="project3 project-card">
+                                    <div class="project-show">
+                                        <div class="project-head">
+                                            <h1>Aesop<span>.</span></h1>
+                                        </div>
+                                        <div class="project-des">
+                                            <p>
+                                                Third dry hath saying our over fruit Place reeping creepeth let
+                                                Good. Created also darkness which open appear cattle Second
+                                                shall brought wherein given. Moveth.
+                                            </p>
+                                        </div>
+
+                                        <div class="project-link">
+                                            <a href="projects.html">SEE PROJECT</a>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project2 project-card">
-                        <div class="project-show">
-                            <div class="project-head">
-                                <h1>The Bottle<span>.</span></h1>
-                            </div>
-                            <div class="project-des">
-                                <p>
-                                    Working with client and community, we deliver masterplans that
-                                    create vibrant new place and spaces, attract people, and
-                                    encourage investment through.
-                                </p>
-                            </div>
-                            <div class="project-link">
-                                <a href="projects.html">SEE PROJECT</a>
-                            </div>
-                            <div class="project-nav">
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn1" checked>
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn3">
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn2">
-                            </div>
-                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
 
 
                     </div>
-                    <div class="project3 project-card">
-                        <div class="project-show">
-                            <div class="project-head">
-                                <h1>Aesop<span>.</span></h1>
-                            </div>
-                            <div class="project-des">
-                                <p>
-                                    Third dry hath saying our over fruit Place reeping creepeth let
-                                    Good. Created also darkness which open appear cattle Second
-                                    shall brought wherein given. Moveth.
-                                </p>
-                            </div>
-
-                            <div class="project-link">
-                                <a href="projects.html">SEE PROJECT</a>
-                            </div>
-                            <div class="project-nav">
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn1" checked>
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn3">
-                                <input type="radio" name="slide" id="slide1" class="btn p-btn2">
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="pro-btn pro-btn-l"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                <div class="pro-btn pro-btn-r"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
             </div>
         </section>
 
-        <!-- <section class="education scroll-effect" id="education">
-            <div class="education-main">
-                <div class="behance">
-                    <div class="edu-logo"></div>
-                    <div class="edu-head"></div>
-                    <div class="edu-con"></div>
-                </div>
-                <div class="envato">
-                    <div class="edu-logo"></div>
-                    <div class="edu-head"></div>
-                    <div class="edu-con"></div>
-                </div>
-                <div class="twiter">
-                    <div class="edu-logo"></div>
-                    <div class="edu-head"></div>
-                    <div class="edu-con"></div>
-                </div>
-            </div>
 
-        </section> -->
+
+
 
         <section class="testimonials scroll-effect" id="testimonials">
             <div class="tm-main">
@@ -472,6 +464,13 @@
         </section>
 
     </div>
+
+
+
+    <!-- swiper js cdn - start -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper js cdn - end -->
+
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

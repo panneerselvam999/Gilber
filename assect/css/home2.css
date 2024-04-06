@@ -596,10 +596,7 @@ header {
 /* about - end */
 
 /* projects - start */
-.project2,
-.project3 {
-    display: none;
-}
+
 
 .projects {
     width: 100%;
@@ -680,9 +677,10 @@ header {
         padding: 120px 0px;
     }
 
-    .project-show{
+    .project-show {
         width: fit-content;
     }
+
     .project-des,
     .project-des p {
         width: 347px;

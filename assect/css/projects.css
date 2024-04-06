@@ -167,7 +167,7 @@ header {
 @media only screen and (max-width: 1500px) {
 
     .head-nav,
-    .num{
+    .num {
         display: none;
     }
 
@@ -185,23 +185,16 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-    .res-nav {
-        z-index: 1000;
-        width: 412px;
-        height: 912px;
-        padding: 0px;
-        border: 1px dashed white;
-        margin: 0px;
-        position: absolute;
-
+    .base {
+        border: 1px dashed;
+        padding: 30px;
     }
 
-    .res-nav-inner {
-        height: 673px;
-        width: 352px;
-        border: 1px dashed red;
+    .social {
+        display: none;
     }
 }
+
 
 /* responsive nav bar - start */
 .res-nav {
@@ -278,6 +271,34 @@ header {
 
 .rsl-copyright {
     font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .res-nav {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        width: 100vw;
+        height: 100vh;
+        padding: 30px;
+        margin: 0px;
+
+    }
+
+    .res-nav-inner {
+        height: 100%;
+        width: 100%;
+    }
+
+    .rsl-social {
+        display: none;
+    }
+
+    .rs-menu {
+        overflow-y: unset;
+    }
 }
 
 /* responsive nav bar - end */
