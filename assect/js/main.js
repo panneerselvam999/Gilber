@@ -58,18 +58,20 @@ document.querySelector('.ts-prev-btn').addEventListener('click', prevSlide);
 // project carousel - start
 
 // swiper caorusel start
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.project-swiper', {
     speed: 400,
     spaceBetween: 10,
     slidesPerView: 1,
     effect: "fade",
     fadeEffect: {
-        crossFade: true // Enable cross fading for complete hiding
+        crossFade: true
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-project',
         type: 'bullets',
-        clickable: true
+        clickable: true,
+        // bulletClass: 'my-bullet',
+        // bulletActiveClass: 'my-bullet-active',
     },
     navigation: {
         nextEl: ".swiper-button-next",

@@ -186,7 +186,6 @@ header {
 
 @media only screen and (max-width: 600px) {
     .base {
-        border: 1px dashed;
         padding: 30px;
     }
 
@@ -326,13 +325,12 @@ header {
     width: 1050px;
     margin: 0px auto;
     padding: 0px 30px;
-}
-
-.project-banner-inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+
 
 .banner-head {
     font-size: 70px;
@@ -515,27 +513,32 @@ header {
     .project-banner {
         margin-bottom: 20px;
         width: 100%;
-        height: 100%;
-        display: block;
+        /* height: 100%; */
+        height: 1500px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: end; */
+        justify-content: space-between;
         background-position: center;
-        background-size: 300%;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
     .project-banner-main {
         width: 100%;
+        height: 994px;
         margin: auto;
         padding: 0px 30px;
-    }
-
-    .project-banner-inner {
-        display: block;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 400px;
     }
 
+
+
     .banner-head {
-        font-size: 60px;
+        font-size: 120px;
         text-align: center;
         display: flex;
         align-items: center;
@@ -551,7 +554,12 @@ header {
     }
 
     .banner-info h4 {
-        font-size: 13px;
+        font-size: 15px;
+    }
+
+
+    .banner-info {
+        margin: 0;
     }
 
     /* Project Info */
