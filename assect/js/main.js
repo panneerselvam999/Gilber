@@ -55,6 +55,10 @@ document.querySelector('.ts-prev-btn').addEventListener('click', prevSlide);
 
 
 
+
+
+
+
 // project carousel - start
 
 // swiper caorusel start
@@ -81,3 +85,4 @@ const swiper = new Swiper('.project-swiper', {
 
 
 // project carousel - end
+
