@@ -27,11 +27,11 @@ body {
     scroll-snap-type: y mandatory;
     height: fit-content;
     overflow-y: scroll;
-    border: 3px dashed green;
+    /* border: 3px dashed green; */
 }
 
 .scroll-effect {
-    border: 3px dashed white;
+    /* border: 3px dashed white; */
     scroll-snap-align: start;
     height: fit-content;
 }
@@ -675,7 +675,7 @@ header {
 }
 
 .swiper-pagination-project {
-    background-color: #333333;
+    /* background-color: #333333; */
     width: fit-content;
 }
 
@@ -742,7 +742,66 @@ header {
 .education-main {
     width: 1010px;
     margin: 0px auto;
-    padding: 0px 30px;
+    margin: 0 auto;
+}
+
+.education-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-head h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.education-head a {
+    padding: 10px 45px;
+    background-color: var(--red);
+}
+
+.edu {
+    padding: 50px 0px;
+    width: 360px;
+    height: 81px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px dashed; */
+}
+
+.edu-sec {
+    /* border: 1px dashed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.edu-head {
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1200px) {
+    .edu-sec {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 940px;
+    }
+    
+    .edu {
+        width: 100% ;
+        padding: 0px;
+    }
+    
+    .edu-head {
+        align-items: flex-start;
+    }
+    /* .education-main {
+        width: fit-content;
+    } */
 }
 
 /* .envato,
@@ -1043,7 +1102,9 @@ header {
 
 .blog-card:hover>* {
     opacity: 1;
+    z-index: 10;
 }
+
 
 .blog-card {
     background-image: none;
@@ -1070,6 +1131,11 @@ header {
     color: var(--para-color);
 }
 
+
+
+.blog-readMore a:hover {
+    color: red;
+}
 
 
 /* hover effect */
