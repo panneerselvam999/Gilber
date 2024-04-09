@@ -777,7 +777,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 50px 0px;
+    border-bottom: 1px solid gray;
 }
+
 
 .edu-head {
     flex-direction: column;
@@ -790,18 +792,56 @@ header {
         align-items: center;
         width: 940px;
     }
-    
+
     .edu {
-        width: 100% ;
+        width: 100%;
         padding: 0px;
     }
-    
+
     .edu-head {
         align-items: flex-start;
     }
+
     /* .education-main {
         width: fit-content;
     } */
+}
+
+@media only screen and (max-width: 600px) {
+    .education {
+        padding: 120px 0px;
+    }
+
+    .education-main {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .education-head {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .education-head h1 {
+        margin-bottom: 30px;
+    }
+
+    .education-button div {
+        display: none;
+    }
+    .edu{
+        height: fit-content;
+    }
+    .edu-sec{
+        width: 100%;
+        gap: 20px;
+    }
+    .edu-con{
+        text-align: justify;
+        width: 95vw;
+    }
 }
 
 /* .envato,
