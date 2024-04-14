@@ -1,3 +1,10 @@
+// loader - start
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    loader.classList.add("hidden");
+});
+// loader - end
+
 
 // nav bar start
 $(document).ready(function () {
