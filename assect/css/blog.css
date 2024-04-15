@@ -75,6 +75,10 @@ header {
     z-index: 100;
 }
 
+.base-active {
+    background-color: rgb(22, 22, 22);
+}
+
 .logo img {
     height: 23px;
 }
